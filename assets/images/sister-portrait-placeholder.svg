@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EB"/>
+      <stop offset="50%" stop-color="#EFE8DC"/>
+      <stop offset="100%" stop-color="#E2D9CA"/>
+    </linearGradient>
+    <linearGradient id="goldArch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#F3E5AB"/>
+      <stop offset="100%" stop-color="#AA8232"/>
+    </linearGradient>
+    <linearGradient id="silkGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A5D4E"/>
+      <stop offset="100%" stop-color="#2D3A2F"/>
+    </linearGradient>
+    <linearGradient id="turmericGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8A939"/>
+      <stop offset="100%" stop-color="#C2841E"/>
+    </linearGradient>
+    <clipPath id="archClip">
+      <!-- Arched shape -->
+      <path d="M40 300 C40 120, 560 120, 560 300 L560 760 C560 770, 550 780, 540 780 L60 780 C50 780, 40 770, 40 760 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="600" height="800" fill="#FAF7F2"/>
+
+  <!-- Outer arched border -->
+  <path d="M30 300 C30 100, 570 100, 570 300 L570 770 C570 780, 560 790, 550 790 L50 790 C40 790, 30 780, 30 770 Z" fill="none" stroke="#7A8F78" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Middle gold arched border -->
+  <path d="M36 300 C36 108, 564 108, 564 300 L564 766 C564 774, 556 784, 546 784 L54 784 C44 784, 36 774, 36 766 Z" fill="none" stroke="url(#goldArch)" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- Inside Clipped Content -->
+  <g clip-path="url(#archClip)">
+    <rect x="40" y="40" width="520" height="740" fill="url(#bgGrad)"/>
+    
+    <!-- Subtle Botanical Foliage in background -->
+    <circle cx="300" cy="280" r="190" fill="#E4ECE3" opacity="0.6"/>
+
+    <!-- Decorative halo mandala behind portrait -->
+    <circle cx="300" cy="330" r="140" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="3 4" opacity="0.7"/>
+    <circle cx="300" cy="330" r="120" fill="none" stroke="#7A8F78" stroke-width="0.75" opacity="0.5"/>
+
+    <!-- Artistic Silhouette / Portrait Illustration of Sister in Traditional Attire -->
+    <!-- Torso and Silk Half Saree (Dhavani / Pavadai) -->
+    <path d="M170 780 C170 620, 220 540, 250 510 C270 495, 330 495, 350 510 C380 540, 430 620, 430 780 Z" fill="url(#silkGreen)"/>
+    
+    <!-- Golden Zari Border on Half Saree Dhavani Drape across shoulder -->
+    <path d="M210 780 L350 520 C365 540, 375 570, 380 620 L270 780 Z" fill="url(#turmericGold)" opacity="0.95"/>
+    <path d="M215 780 L355 520" stroke="#FFF0C2" stroke-width="2"/>
+    <path d="M265 780 L375 620" stroke="#AA8232" stroke-width="1.5"/>
+
+    <!-- Traditional Temple Necklace (Haaram / Choker) -->
+    <path d="M270 490 C280 520, 320 520, 330 490" fill="none" stroke="url(#goldArch)" stroke-width="4"/>
+    <circle cx="300" cy="510" r="7" fill="#C5A059"/>
+    <circle cx="300" cy="510" r="4" fill="#8B263E"/> <!-- Ruby stone center -->
+    <path d="M260 480 C275 550, 325 550, 340 480" fill="none" stroke="url(#goldArch)" stroke-width="2" stroke-dasharray="3 2"/>
+
+    <!-- Neck and Chin -->
+    <path d="M285 450 L285 490 C293 494, 307 494, 315 490 L315 450 Z" fill="#E6C8A6"/>
+
+    <!-- Face Oval -->
+    <ellipse cx="300" cy="390" rx="46" ry="60" fill="#F0D3B5"/>
+
+    <!-- Traditional Red Pottu / Bindi with Chandanam -->
+    <circle cx="300" cy="365" r="4" fill="#A82828"/>
+    <circle cx="300" cy="360" r="1.5" fill="#E8D18C"/>
+
+    <!-- Elegant Hair & Traditional Braid -->
+    <path d="M250 380 C250 310, 350 310, 350 380 C340 350, 320 340, 300 342 C280 340, 260 350, 250 380 Z" fill="#242120"/>
+    <!-- Maang Tikka (Nethi Chutti) -->
+    <path d="M300 320 L300 355" stroke="url(#goldArch)" stroke-width="2"/>
+    <circle cx="300" cy="355" r="4" fill="url(#goldArch)"/>
+    <circle cx="300" cy="355" r="2" fill="#A82828"/>
+
+    <!-- Traditional Jasmine Flowers (Mallipoo) in Hair Garland -->
+    <g fill="#FFFFFF" stroke="#E2D7C3" stroke-width="0.5">
+      <circle cx="250" cy="360" r="7"/><circle cx="255" cy="345" r="7"/>
+      <circle cx="265" cy="332" r="7"/><circle cx="280" cy="324" r="7"/>
+      <circle cx="320" cy="324" r="7"/><circle cx="335" cy="332" r="7"/>
+      <circle cx="345" cy="345" r="7"/><circle cx="350" cy="360" r="7"/>
+      <circle cx="245" cy="375" r="6"/><circle cx="355" cy="375" r="6"/>
+      <circle cx="242" cy="390" r="6"/><circle cx="358" cy="390" r="6"/>
+      <!-- Flower cores -->
+      <circle cx="250" cy="360" r="2" fill="#F4E091"/>
+      <circle cx="280" cy="324" r="2" fill="#F4E091"/>
+      <circle cx="320" cy="324" r="2" fill="#F4E091"/>
+      <circle cx="350" cy="360" r="2" fill="#F4E091"/>
+    </g>
+
+    <!-- Traditional Gold Jhumkas (Earrings) -->
+    <!-- Left earring -->
+    <circle cx="252" cy="405" r="3" fill="url(#goldArch)"/>
+    <path d="M246 414 C246 410, 258 410, 258 414 L260 422 C260 424, 244 424, 244 422 Z" fill="url(#goldArch)"/>
+    <circle cx="252" cy="425" r="1.5" fill="#FAF7F2"/>
+    <!-- Right earring -->
+    <circle cx="348" cy="405" r="3" fill="url(#goldArch)"/>
+    <path d="M342 414 C342 410, 354 410, 354 414 L356 422 C356 424, 340 424, 340 422 Z" fill="url(#goldArch)"/>
+    <circle cx="348" cy="425" r="1.5" fill="#FAF7F2"/>
+
+    <!-- Eyes, brows & gentle smile silhouette -->
+    <path d="M276 380 Q286 376 293 381" stroke="#242120" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M307 381 Q314 376 324 380" stroke="#242120" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M279 392 Q286 398 293 392" stroke="#4A3B32" stroke-width="1.8" fill="none"/>
+    <path d="M307 392 Q314 398 321 392" stroke="#4A3B32" stroke-width="1.8" fill="none"/>
+    <!-- Nose line -->
+    <path d="M300 388 Q303 404 298 406" stroke="#C7A380" stroke-width="1.5" fill="none"/>
+    <!-- Gentle gracious smile -->
+    <path d="M290 420 Q300 428 310 420" stroke="#B85555" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Subtle Editorial Badge Overlay at the bottom -->
+    <g transform="translate(300, 700)">
+      <rect x="-180" y="-30" width="360" height="54" rx="27" fill="#FAF7F2" fill-opacity="0.94" stroke="#C5A059" stroke-width="1"/>
+      <text x="0" y="-8" text-anchor="middle" font-family="'Cinzel', serif, Georgia" font-size="11" fill="#4A5D4E" font-weight="600" letter-spacing="2">FEATURED PORTRAIT PLACEHOLDER</text>
+      <text x="0" y="12" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#7A8F78" letter-spacing="1">Click or replace with sister's real photo in script.js</text>
+    </g>
+  </g>
+
+  <!-- Top arch decorative jasmine blossom -->
+  <g transform="translate(300, 100)">
+    <circle cx="0" cy="0" r="16" fill="#FAF7F2" stroke="#C5A059" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="5" fill="#D4AF37"/>
+    <path d="M-22 0 C-14 -12, 14 -12, 22 0" fill="none" stroke="#7A8F78" stroke-width="1.5"/>
+    <circle cx="-25" cy="0" r="3" fill="#C5A059"/>
+    <circle cx="25" cy="0" r="3" fill="#C5A059"/>
+  </g>
+</svg>

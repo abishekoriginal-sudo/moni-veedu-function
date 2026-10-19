@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="folkCreamBg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5"/>
+      <stop offset="100%" stop-color="#F3ECE0"/>
+    </linearGradient>
+    <linearGradient id="bananaLeafFolk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4E8C34"/>
+      <stop offset="50%" stop-color="#64AC44"/>
+      <stop offset="100%" stop-color="#3C7326"/>
+    </linearGradient>
+    <linearGradient id="gheeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#folkCreamBg5)"/>
+
+  <!-- Minimalist Folk Border -->
+  <rect x="24" y="24" width="552" height="432" fill="none" stroke="#4A5D4E" stroke-width="1.5"/>
+  <rect x="32" y="32" width="536" height="416" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Corner Kolam accents -->
+  <g stroke="#C5A059" stroke-width="1.2" fill="none">
+    <path d="M42 42 L56 42 M42 42 L42 56"/><circle cx="46" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M558 42 L544 42 M558 42 L558 56"/><circle cx="554" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M42 438 L56 438 M42 438 L42 424"/><circle cx="46" cy="434" r="2.5" fill="#C5A059"/>
+    <path d="M558 438 L544 438 M558 438 L558 424"/><circle cx="554" cy="434" r="2.5" fill="#C5A059"/>
+  </g>
+
+  <!-- Central Circular Halo -->
+  <circle cx="300" cy="205" r="130" fill="#EEF4EC" stroke="#C5A059" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+  <!-- Folk Art: Traditional Banana Leaf Feast (தலைவாழை இலை விருந்து) -->
+  <g transform="translate(300, 205)">
+    <!-- Banana Leaf Outline &amp; Body (Vaalai Ilai) -->
+    <path d="M-150 50 C-165 -45, -120 -85, 0 -85 C120 -85, 165 -45, 150 50 C125 80, -125 80, -150 50 Z" 
+          fill="url(#bananaLeafFolk)" stroke="#274D17" stroke-width="2.5"/>
+    
+    <!-- Central Midrib (இலை நரம்பு) -->
+    <path d="M-140 -5 Q0 -8 140 -5" stroke="#8AE660" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Folk leaf veins -->
+    <g stroke="#71C849" stroke-width="1.2" opacity="0.85">
+      <line x1="-100" y1="-7" x2="-80" y2="-45"/>
+      <line x1="-50" y1="-7" x2="-35" y2="-55"/>
+      <line x1="0" y1="-7" x2="10" y2="-58"/>
+      <line x1="50" y1="-7" x2="65" y2="-55"/>
+      <line x1="100" y1="-7" x2="115" y2="-45"/>
+
+      <line x1="-100" y1="-4" x2="-80" y2="40"/>
+      <line x1="-50" y1="-4" x2="-35" y2="48"/>
+      <line x1="0" y1="-4" x2="10" y2="50"/>
+      <line x1="50" y1="-4" x2="65" y2="48"/>
+      <line x1="100" y1="-4" x2="115" y2="40"/>
+    </g>
+
+    <!-- Steaming Rice Heap (சோறு &amp; நெய் பருப்பு) -->
+    <ellipse cx="0" cy="25" rx="38" ry="24" fill="#FFFFFF" stroke="#D1C7B7" stroke-width="1.2"/>
+    <!-- Paruppu &amp; Ghee lake on top of rice -->
+    <circle cx="0" cy="25" r="12" fill="url(#gheeGold)" stroke="#D97706" stroke-width="1"/>
+    <circle cx="0" cy="25" r="5" fill="#F59E0B"/>
+
+    <!-- Medu Vadai (உளுந்த வடை) on Left -->
+    <g transform="translate(-70, 28)">
+      <circle cx="0" cy="0" r="18" fill="#D97706" stroke="#92400E" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="15" fill="#F59E0B" opacity="0.6"/>
+      <circle cx="0" cy="0" r="6" fill="#4E8C34"/> <!-- Vadai hole showing green leaf -->
+      <!-- Tiny pepper/curry leaf dots -->
+      <circle cx="-6" cy="-6" r="1.5" fill="#2D3A2F"/>
+      <circle cx="6" cy="6" r="1.5" fill="#2D3A2F"/>
+    </g>
+
+    <!-- Appalam (அப்பளம்) behind vadai -->
+    <circle cx="-105" cy="18" r="22" fill="#FEF3C7" stroke="#D97706" stroke-width="1.2"/>
+    <circle cx="-105" cy="18" r="18" stroke="#FDE68A" stroke-width="1" stroke-dasharray="2 3" fill="none"/>
+
+    <!-- Sweet Payasam Bowl (பாயாசம்) on Right -->
+    <g transform="translate(75, 26)">
+      <circle cx="0" cy="0" r="17" fill="#ECCF8B" stroke="#92400E" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="13" fill="#FFFBEB"/>
+      <!-- Cashew &amp; Raisin in Payasam -->
+      <ellipse cx="-3" cy="-2" rx="4" ry="2.5" fill="#D97706"/>
+      <circle cx="4" cy="3" r="2.5" fill="#78350F"/>
+    </g>
+
+    <!-- Traditional Curries along Top Edge (Poriyal, Kootu, Aviyal, Pickle, Pachadi) -->
+    <!-- Spicy Mango Pickle (ஊறுகாய்) -->
+    <circle cx="-110" cy="-35" r="9" fill="#DC2626" stroke="#991B1B" stroke-width="1"/>
+    <!-- Inji Puli / Pachadi -->
+    <circle cx="-75" cy="-45" r="11" fill="#EA580C" stroke="#9A3412" stroke-width="1"/>
+    <!-- Vazhaikkai Poriyal (பொரியல்) -->
+    <circle cx="-35" cy="-52" r="13" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+    <!-- Kootu (கூட்டு) -->
+    <circle cx="5" cy="-55" r="14" fill="#F59E0B" stroke="#B45309" stroke-width="1"/>
+    <!-- Aviyal (அவியல்) -->
+    <circle cx="45" cy="-50" r="13" fill="#D9F99D" stroke="#65A30D" stroke-width="1"/>
+    <!-- Potato Varuval (வறுவல்) -->
+    <circle cx="85" cy="-42" r="12" fill="#EF4444" stroke="#B91C1C" stroke-width="1"/>
+    <!-- Sweet Kesari / Laddu -->
+    <circle cx="120" cy="-30" r="10" fill="#F97316" stroke="#C2410C" stroke-width="1"/>
+  </g>
+
+  <!-- Editorial Folk Label Block -->
+  <g transform="translate(300, 395)">
+    <rect x="-190" y="-20" width="380" height="40" rx="20" fill="#FFFFFF" stroke="#4A5D4E" stroke-width="1"/>
+    <text x="0" y="-3" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="12" fill="#4A5D4E" font-weight="700" letter-spacing="2">வாழை இலை விருந்து • VAALAI ILAI VIRUNDHU</text>
+    <text x="0" y="13" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#8A6A2C" letter-spacing="1.2">Traditional South Indian Banana Leaf Kalyana Feast</text>
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="folkCreamBg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5"/>
+      <stop offset="100%" stop-color="#F3ECE0"/>
+    </linearGradient>
+    <linearGradient id="brassInstrument" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E4B5"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#8A6A2C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#folkCreamBg6)"/>
+
+  <!-- Minimalist Folk Border -->
+  <rect x="24" y="24" width="552" height="432" fill="none" stroke="#4A5D4E" stroke-width="1.5"/>
+  <rect x="32" y="32" width="536" height="416" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Corner Kolam accents -->
+  <g stroke="#C5A059" stroke-width="1.2" fill="none">
+    <path d="M42 42 L56 42 M42 42 L42 56"/><circle cx="46" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M558 42 L544 42 M558 42 L558 56"/><circle cx="554" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M42 438 L56 438 M42 438 L42 424"/><circle cx="46" cy="434" r="2.5" fill="#C5A059"/>
+    <path d="M558 438 L544 438 M558 438 L558 424"/><circle cx="554" cy="434" r="2.5" fill="#C5A059"/>
+  </g>
+
+  <!-- Central Circular Halo -->
+  <circle cx="300" cy="205" r="125" fill="#FAF5EB" stroke="#C5A059" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+  <!-- Folk Art: Traditional Nadaswaram, Thavil &amp; Modern Music Celebration -->
+  <g transform="translate(300, 205)">
+    <!-- South Indian Nadaswaram (நாதஸ்வரம்) Pipe -->
+    <g transform="rotate(-35)">
+      <!-- Main wooden pipe body -->
+      <path d="M-6 -80 L6 -80 L12 60 L-12 60 Z" fill="#422006" stroke="#1C0E02" stroke-width="1.5"/>
+      <!-- Brass Bell (அனசு) at bottom -->
+      <path d="M-12 60 C-25 75, -35 85, -35 95 L35 95 C35 85, 25 75, 12 60 Z" fill="url(#brassInstrument)" stroke="#78350F" stroke-width="1.5"/>
+      <!-- Mouthpiece (சீவாளி) at top -->
+      <rect x="-4" y="-95" width="8" height="15" fill="url(#brassInstrument)"/>
+      <ellipse cx="0" cy="-95" rx="5" ry="2" fill="#D97706"/>
+      <!-- Finger holes -->
+      <circle cx="0" cy="-45" r="2.5" fill="#C5A059"/>
+      <circle cx="0" cy="-25" r="2.5" fill="#C5A059"/>
+      <circle cx="0" cy="-5" r="2.5" fill="#C5A059"/>
+      <circle cx="0" cy="15" r="2.5" fill="#C5A059"/>
+      <circle cx="0" cy="35" r="2.5" fill="#C5A059"/>
+    </g>
+
+    <!-- South Indian Thavil Drum (தவில்) on Right -->
+    <g transform="translate(55, 15) rotate(15)">
+      <!-- Barrel body -->
+      <ellipse cx="0" cy="0" rx="36" ry="24" fill="#78350F" stroke="#451A03" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="30" ry="20" fill="#9A3412"/>
+      <!-- Left head (Valanthalai) -->
+      <ellipse cx="-32" cy="0" rx="8" ry="22" fill="#FEF3C7" stroke="#92400E" stroke-width="1.2"/>
+      <ellipse cx="-32" cy="0" rx="4" ry="12" fill="#D97706"/>
+      <!-- Right head (Thoppi) -->
+      <ellipse cx="32" cy="0" rx="8" ry="22" fill="#FEF3C7" stroke="#92400E" stroke-width="1.2"/>
+      <!-- Leather strapping lines across drum -->
+      <line x1="-28" y1="-18" x2="28" y2="-18" stroke="#FDE68A" stroke-width="1.5"/>
+      <line x1="-28" y1="0" x2="28" y2="0" stroke="#FDE68A" stroke-width="1.5"/>
+      <line x1="-28" y1="18" x2="28" y2="18" stroke="#FDE68A" stroke-width="1.5"/>
+    </g>
+
+    <!-- Modern DJ Celebration &amp; Festive Musical Notes / Sparkles -->
+    <!-- Musical notes in folk style -->
+    <g fill="#4A5D4E" stroke="#2D3A2F" stroke-width="0.8">
+      <!-- Eighth note left -->
+      <g transform="translate(-85, -45) scale(0.9)">
+        <ellipse cx="0" cy="0" rx="6" ry="4.5" transform="rotate(-20)"/>
+        <line x1="5" y1="0" x2="5" y2="-22" stroke-width="2"/>
+        <path d="M5 -22 C12 -20, 15 -14, 15 -12" stroke-width="2" fill="none"/>
+      </g>
+      <!-- Beam notes top right -->
+      <g transform="translate(50, -75) scale(0.9)">
+        <ellipse cx="-12" cy="5" rx="5" ry="4" transform="rotate(-20)"/>
+        <ellipse cx="12" cy="0" rx="5" ry="4" transform="rotate(-20)"/>
+        <line x1="-8" y1="5" x2="-8" y2="-18" stroke-width="2"/>
+        <line x1="16" y1="0" x2="16" y2="-23" stroke-width="2"/>
+        <polygon points="-8,-18 16,-23 16,-19 -8,-14" fill="#4A5D4E"/>
+      </g>
+    </g>
+
+    <!-- Golden celebratory sparkles &amp; flowers -->
+    <g fill="#C5A059">
+      <!-- Star 1 -->
+      <path d="M-80 50 L-78 43 L-71 41 L-78 39 L-80 32 L-82 39 L-89 41 L-82 43 Z"/>
+      <!-- Star 2 -->
+      <path d="M100 -20 L102 -25 L107 -27 L102 -29 L100 -34 L98 -29 L93 -27 L98 -25 Z"/>
+      <!-- Star 3 -->
+      <circle cx="-50" cy="-75" r="3"/>
+      <circle cx="85" cy="65" r="3"/>
+    </g>
+  </g>
+
+  <!-- Editorial Folk Label Block -->
+  <g transform="translate(300, 395)">
+    <rect x="-190" y="-20" width="380" height="40" rx="20" fill="#FFFFFF" stroke="#4A5D4E" stroke-width="1"/>
+    <text x="0" y="-3" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="12" fill="#4A5D4E" font-weight="700" letter-spacing="2">மங்கல இசை &amp; டிஜே • ISAI &amp; DJ KONDATTAM</text>
+    <text x="0" y="13" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#8A6A2C" letter-spacing="1.2">Traditional Nadaswaram, Thavil &amp; DJ Celebration</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF8F2"/>
+      <stop offset="100%" stop-color="#EDE4D5"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#g1)"/>
+  <rect x="15" y="15" width="470" height="370" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="3 3"/>
+  
+  <!-- Illustration: Sacred Kalasam & Turmeric -->
+  <circle cx="250" cy="180" r="110" fill="#E8EFE6" opacity="0.7"/>
+  <!-- Kalasam pot -->
+  <path d="M220 220 C220 270, 280 270, 280 220 C280 200, 220 200, 220 220 Z" fill="#D4AF37" stroke="#A6832B" stroke-width="2"/>
+  <ellipse cx="250" cy="200" rx="30" ry="10" fill="#E5CA85"/>
+  <!-- Coconut on top -->
+  <circle cx="250" cy="180" r="22" fill="#8D5B4C"/>
+  <!-- Mango leaves sticking out -->
+  <path d="M250 180 C230 140, 200 150, 210 175 Z" fill="#4A5D4E"/>
+  <path d="M250 180 C270 140, 300 150, 290 175 Z" fill="#4A5D4E"/>
+  <path d="M250 180 C250 130, 260 130, 255 170 Z" fill="#5F7563"/>
+  <path d="M250 180 C235 155, 220 160, 230 178 Z" fill="#6B826F"/>
+  <path d="M250 180 C265 155, 280 160, 270 178 Z" fill="#6B826F"/>
+
+  <!-- Turmeric & Kumkum dots -->
+  <circle cx="250" cy="225" r="8" fill="#F1A80A"/>
+  <circle cx="250" cy="225" r="4" fill="#991B1B"/>
+
+  <!-- Small text banner -->
+  <rect x="70" y="320" width="360" height="40" rx="20" fill="#FFFFFF" stroke="#4A5D4E" stroke-width="0.8"/>
+  <text x="250" y="345" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="12" fill="#4A5D4E" font-weight="600" letter-spacing="1.5">MANJAL NEERATTU • SACRED RITUALS</text>
+</svg>

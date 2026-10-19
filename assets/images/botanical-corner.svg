@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Elegant Sage Green & Antique Gold Botanical Flourish -->
+  <g opacity="0.85">
+    <!-- Main stem -->
+    <path d="M10 10 C 60 20, 110 50, 150 110 C 170 140, 185 170, 190 190" stroke="#7A8F78" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Gold accent branch -->
+    <path d="M40 25 C 80 45, 120 85, 140 140" stroke="#C5A059" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 2"/>
+    
+    <!-- Delicate sage leaves -->
+    <path d="M60 27 C 75 15, 95 18, 90 35 C 75 40, 60 27, 60 27 Z" fill="#6B8069" opacity="0.9"/>
+    <path d="M90 42 C 110 32, 125 45, 115 60 C 100 62, 90 42, 90 42 Z" fill="#889E86" opacity="0.85"/>
+    <path d="M120 70 C 142 62, 152 80, 140 95 C 126 92, 120 70, 120 70 Z" fill="#5F745E" opacity="0.9"/>
+    <path d="M145 105 C 168 100, 175 120, 160 135 C 147 130, 145 105, 145 105 Z" fill="#7A8F78" opacity="0.85"/>
+    <path d="M165 145 C 185 145, 190 165, 175 178 C 165 170, 165 145, 165 145 Z" fill="#889E86" opacity="0.85"/>
+
+    <!-- Small side shoots and buds -->
+    <path d="M45 26 C 35 15, 45 5, 52 14 C 52 20, 45 26, 45 26 Z" fill="#C5A059" opacity="0.8"/>
+    <path d="M80 37 C 70 26, 80 16, 87 25 C 87 31, 80 37, 80 37 Z" fill="#D4AF37" opacity="0.75"/>
+    <path d="M108 58 C 100 48, 110 38, 117 47 C 117 53, 108 58, 108 58 Z" fill="#C5A059" opacity="0.8"/>
+    <path d="M135 90 C 128 80, 138 72, 145 80 C 145 87, 135 90, 135 90 Z" fill="#D4AF37" opacity="0.75"/>
+
+    <!-- Jasmine flower buds (ivory and gold dots) -->
+    <circle cx="95" cy="20" r="3.5" fill="#FAF7F2" stroke="#C5A059" stroke-width="1"/>
+    <circle cx="125" cy="46" r="4" fill="#FAF7F2" stroke="#C5A059" stroke-width="1"/>
+    <circle cx="152" cy="82" r="4" fill="#FAF7F2" stroke="#C5A059" stroke-width="1"/>
+    <circle cx="178" cy="125" r="3.5" fill="#FAF7F2" stroke="#C5A059" stroke-width="1"/>
+    <circle cx="192" cy="168" r="3" fill="#FAF7F2" stroke="#C5A059" stroke-width="1"/>
+
+    <!-- Tiny golden sparkle stars -->
+    <path d="M40 60 L42 55 L44 60 L49 62 L44 64 L42 69 L40 64 L35 62 Z" fill="#C5A059" opacity="0.6"/>
+    <path d="M100 110 L101.5 106 L103 110 L107 111.5 L103 113 L101.5 117 L100 113 L96 111.5 Z" fill="#C5A059" opacity="0.6"/>
+  </g>
+</svg>

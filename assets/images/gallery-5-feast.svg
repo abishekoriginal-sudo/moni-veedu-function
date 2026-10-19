@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF8F2"/>
+      <stop offset="100%" stop-color="#EBE3D3"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6CA84E"/>
+      <stop offset="50%" stop-color="#5B933F"/>
+      <stop offset="100%" stop-color="#467330"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#g5)"/>
+  <rect x="15" y="15" width="470" height="370" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Banana Leaf Feast (Thalavazhai Ilai Virundhu) -->
+  <circle cx="250" cy="175" r="115" fill="#FAF5ED" stroke="#7A8F78" stroke-width="0.8"/>
+
+  <!-- Banana Leaf Shape -->
+  <path d="M140 230 C130 160, 160 120, 250 120 C340 120, 370 160, 360 230 C340 250, 160 250, 140 230 Z" fill="url(#leafGrad)" stroke="#3E632B" stroke-width="2"/>
+  <!-- Central Leaf Vein -->
+  <path d="M140 180 Q250 178 360 180" stroke="#87BF6B" stroke-width="2" stroke-linecap="round"/>
+  <!-- Side Veins -->
+  <path d="M170 180 L190 145" stroke="#7CB360" stroke-width="1"/>
+  <path d="M210 180 L230 140" stroke="#7CB360" stroke-width="1"/>
+  <path d="M250 180 L270 140" stroke="#7CB360" stroke-width="1"/>
+  <path d="M290 180 L310 145" stroke="#7CB360" stroke-width="1"/>
+  <path d="M170 180 L190 215" stroke="#7CB360" stroke-width="1"/>
+  <path d="M210 180 L230 220" stroke="#7CB360" stroke-width="1"/>
+  <path d="M250 180 L270 220" stroke="#7CB360" stroke-width="1"/>
+  <path d="M290 180 L310 215" stroke="#7CB360" stroke-width="1"/>
+
+  <!-- Delicacies on the Leaf: Sweet Payasam, Vadai, Sambar Rice, Curries -->
+  <!-- Steaming Rice Heap -->
+  <ellipse cx="250" cy="205" rx="26" ry="16" fill="#FFFFFF" stroke="#E5DEC9" stroke-width="1"/>
+  <circle cx="250" cy="205" r="7" fill="#E8B428" opacity="0.8"/> <!-- Ghee Paruppu -->
+  
+  <!-- Medu Vadai -->
+  <circle cx="200" cy="210" r="14" fill="#C48437" stroke="#9A611C" stroke-width="1"/>
+  <circle cx="200" cy="210" r="4" fill="#6CA84E"/> <!-- Hole showing leaf -->
+
+  <!-- Appalam (Pappadam) -->
+  <circle cx="170" cy="200" r="15" fill="#F4DE97" stroke="#D1BA6E" stroke-width="1"/>
+
+  <!-- Payasam Cup (Sweet) -->
+  <circle cx="310" cy="205" r="14" fill="#FBF0D9" stroke="#C5A059" stroke-width="1"/>
+  <circle cx="308" cy="203" r="3" fill="#B3541E"/> <!-- Cashew/raisin -->
+
+  <!-- Vegetable curries along the top edge -->
+  <circle cx="170" cy="155" r="9" fill="#D94848"/> <!-- Pickle / Pachadi -->
+  <circle cx="200" cy="150" r="11" fill="#E8B838"/> <!-- Poriyal -->
+  <circle cx="235" cy="146" r="11" fill="#F4A261"/> <!-- Kootu -->
+  <circle cx="270" cy="146" r="11" fill="#889E86"/> <!-- Aviyal -->
+  <circle cx="305" cy="150" r="10" fill="#E76F51"/> <!-- Varuval -->
+
+  <!-- Small text banner -->
+  <rect x="70" y="320" width="360" height="40" rx="20" fill="#FFFFFF" stroke="#4A5D4E" stroke-width="0.8"/>
+  <text x="250" y="345" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="12" fill="#4A5D4E" font-weight="600" letter-spacing="1.5">TRADITIONAL KALYANA VIRUNDHU FEAST</text>
+</svg>

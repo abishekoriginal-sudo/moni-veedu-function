@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="folkCreamBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5"/>
+      <stop offset="100%" stop-color="#F3ECE0"/>
+    </linearGradient>
+    <linearGradient id="silkGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3D5042"/>
+      <stop offset="50%" stop-color="#556E5A"/>
+      <stop offset="100%" stop-color="#3D5042"/>
+    </linearGradient>
+    <linearGradient id="zariGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059"/>
+      <stop offset="50%" stop-color="#F5E4B5"/>
+      <stop offset="100%" stop-color="#B08A38"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#folkCreamBg2)"/>
+
+  <!-- Minimalist Folk Border -->
+  <rect x="24" y="24" width="552" height="432" fill="none" stroke="#4A5D4E" stroke-width="1.5"/>
+  <rect x="32" y="32" width="536" height="416" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Corner Kolam accents -->
+  <g stroke="#C5A059" stroke-width="1.2" fill="none">
+    <path d="M42 42 L56 42 M42 42 L42 56"/><circle cx="46" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M558 42 L544 42 M558 42 L558 56"/><circle cx="554" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M42 438 L56 438 M42 438 L42 424"/><circle cx="46" cy="434" r="2.5" fill="#C5A059"/>
+    <path d="M558 438 L544 438 M558 438 L558 424"/><circle cx="554" cy="434" r="2.5" fill="#C5A059"/>
+  </g>
+
+  <!-- Central Circular Halo -->
+  <circle cx="300" cy="205" r="125" fill="#F4EFE6" stroke="#C5A059" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+  <!-- Folk Art: Draped Pavadai Dhavani (Half Saree) &amp; Temple Jhumka -->
+  <g transform="translate(300, 210)">
+    <!-- Silk Half Saree Pleats -->
+    <path d="M-80 90 L-40 -40 L0 -40 L-30 90 Z" fill="url(#silkGreenGrad)" stroke="#2D3A2F" stroke-width="1.5"/>
+    <path d="M-30 90 L0 -40 L40 -40 L10 90 Z" fill="#627A67" stroke="#2D3A2F" stroke-width="1.5"/>
+    <path d="M10 90 L40 -40 L80 -40 L50 90 Z" fill="url(#silkGreenGrad)" stroke="#2D3A2F" stroke-width="1.5"/>
+
+    <!-- Broad Golden Zari Border (Mayilkan / Mango Paisley zari band) -->
+    <rect x="-85" y="70" width="140" height="20" fill="url(#zariGold)" stroke="#8A6A2C" stroke-width="1.2" rx="2"/>
+    <line x1="-85" y1="76" x2="55" y2="76" stroke="#8B263E" stroke-width="1"/>
+    <line x1="-85" y1="84" x2="55" y2="84" stroke="#8B263E" stroke-width="1"/>
+    <!-- Tiny zari diamond motifs -->
+    <polygon points="-65,80 -60,76 -55,80 -60,84" fill="#8B263E"/>
+    <polygon points="-35,80 -30,76 -25,80 -30,84" fill="#8B263E"/>
+    <polygon points="-5,80 0,76 5,80 0,84" fill="#8B263E"/>
+    <polygon points="25,80 30,76 35,80 30,84" fill="#8B263E"/>
+
+    <!-- Traditional Gold Temple Jhumka (Jimikki) Motif (Floating to the right) -->
+    <g transform="translate(65, -15)">
+      <!-- Jhumka stud -->
+      <circle cx="0" cy="-25" r="9" fill="url(#zariGold)" stroke="#8A6A2C" stroke-width="1.2"/>
+      <circle cx="0" cy="-25" r="4" fill="#8B263E"/> <!-- Ruby stone -->
+      <!-- Hanging bell -->
+      <path d="M-18 0 C-18 -15, 18 -15, 18 0 Z" fill="url(#zariGold)" stroke="#8A6A2C" stroke-width="1.2"/>
+      <ellipse cx="0" cy="0" rx="18" ry="4" fill="#ECCF8B" stroke="#8A6A2C" stroke-width="1"/>
+      <!-- Hanging gold beads (Mani) -->
+      <circle cx="-14" cy="7" r="2" fill="#D4AF37"/>
+      <circle cx="-7" cy="8" r="2" fill="#D4AF37"/>
+      <circle cx="0" cy="9" r="2.5" fill="#D4AF37"/>
+      <circle cx="7" cy="8" r="2" fill="#D4AF37"/>
+      <circle cx="14" cy="7" r="2" fill="#D4AF37"/>
+    </g>
+
+    <!-- Traditional Gold Bangles (Valayal) (Floating to the left) -->
+    <g transform="translate(-75, -15)">
+      <ellipse cx="-10" cy="0" rx="15" ry="24" fill="none" stroke="url(#zariGold)" stroke-width="3"/>
+      <ellipse cx="0" cy="0" rx="15" ry="24" fill="none" stroke="#8B263E" stroke-width="2.5"/> <!-- Kumkum ruby bangle -->
+      <ellipse cx="10" cy="0" rx="15" ry="24" fill="none" stroke="#4A5D4E" stroke-width="2.5"/> <!-- Green silk bangle -->
+      <ellipse cx="20" cy="0" rx="15" ry="24" fill="none" stroke="url(#zariGold)" stroke-width="3.5"/>
+    </g>
+  </g>
+
+  <!-- Editorial Folk Label Block -->
+  <g transform="translate(300, 395)">
+    <rect x="-190" y="-20" width="380" height="40" rx="20" fill="#FFFFFF" stroke="#4A5D4E" stroke-width="1"/>
+    <text x="0" y="-3" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="12" fill="#4A5D4E" font-weight="700" letter-spacing="2">தாவணி அலங்காரம் • THAVANI ALANKARAM</text>
+    <text x="0" y="13" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#8A6A2C" letter-spacing="1.2">Kanchipuram Silk Half Saree &amp; Temple Jewels</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" fill="none">
+  <!-- Symmetrical botanical leaf sprig -->
+  <path d="M10 30 Q50 28 90 30" stroke="#7A8F78" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Center gem -->
+  <circle cx="50" cy="29" r="3.5" fill="#C5A059"/>
+  <circle cx="50" cy="29" r="1.5" fill="#FAF7F2"/>
+  <!-- Left leaves -->
+  <path d="M35 29 C30 18, 20 18, 22 29 Z" fill="#6B8069" opacity="0.85"/>
+  <path d="M35 29 C30 40, 20 40, 22 29 Z" fill="#7A8F78" opacity="0.75"/>
+  <path d="M22 29 C17 22, 10 24, 12 29 Z" fill="#889E86" opacity="0.8"/>
+  <!-- Right leaves -->
+  <path d="M65 29 C70 18, 80 18, 78 29 Z" fill="#6B8069" opacity="0.85"/>
+  <path d="M65 29 C70 40, 80 40, 78 29 Z" fill="#7A8F78" opacity="0.75"/>
+  <path d="M78 29 C83 22, 90 24, 88 29 Z" fill="#889E86" opacity="0.8"/>
+</svg>

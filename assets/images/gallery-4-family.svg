@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF8F2"/>
+      <stop offset="100%" stop-color="#EBE3D3"/>
+    </linearGradient>
+    <linearGradient id="thaliBrass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5CA85"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9E8047"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#g4)"/>
+  <rect x="15" y="15" width="470" height="370" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Aarti Thali Illustration -->
+  <circle cx="250" cy="175" r="115" fill="#FAF5ED" stroke="#7A8F78" stroke-width="0.8"/>
+  
+  <!-- Outer Brass Plate with ornamental rim -->
+  <circle cx="250" cy="170" r="95" fill="url(#thaliBrass)" stroke="#8A6C2C" stroke-width="2"/>
+  <circle cx="250" cy="170" r="85" fill="#E6A820" opacity="0.3"/>
+  <circle cx="250" cy="170" r="80" stroke="#FAF7F2" stroke-width="1.5" stroke-dasharray="2 3"/>
+
+  <!-- Turmeric water / Kumkum water base in Thali -->
+  <circle cx="250" cy="170" r="75" fill="#D94848" opacity="0.85"/>
+  <circle cx="250" cy="170" r="70" fill="#E8B428" opacity="0.7"/>
+
+  <!-- Brass Diya in center -->
+  <ellipse cx="250" cy="170" rx="20" ry="12" fill="url(#thaliBrass)" stroke="#7A5612" stroke-width="1"/>
+  <path d="M250 148 C245 158, 242 162, 250 166 C258 162, 255 158, 250 148 Z" fill="#FFA500"/>
+  <path d="M250 152 C247 158, 246 160, 250 164 C254 160, 253 158, 250 152 Z" fill="#FFF275"/>
+
+  <!-- Small bowls for Kumkum & Chandanam -->
+  <circle cx="205" cy="170" r="14" fill="url(#thaliBrass)"/>
+  <circle cx="205" cy="170" r="10" fill="#A81D1D"/> <!-- Red Kumkum -->
+  <circle cx="295" cy="170" r="14" fill="url(#thaliBrass)"/>
+  <circle cx="295" cy="170" r="10" fill="#F4DE97"/> <!-- Sandalwood paste / Chandanam -->
+
+  <!-- Small text banner -->
+  <rect x="70" y="320" width="360" height="40" rx="20" fill="#FFFFFF" stroke="#4A5D4E" stroke-width="0.8"/>
+  <text x="250" y="345" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="12" fill="#4A5D4E" font-weight="600" letter-spacing="1.5">AARTI & ELDERS' SACRED BLESSINGS</text>
+</svg>

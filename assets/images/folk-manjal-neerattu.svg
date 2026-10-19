@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="folkCreamBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5"/>
+      <stop offset="100%" stop-color="#F3ECE0"/>
+    </linearGradient>
+    <linearGradient id="folkGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A059"/>
+      <stop offset="50%" stop-color="#ECCF8B"/>
+      <stop offset="100%" stop-color="#A57F37"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Textured linen background -->
+  <rect width="600" height="480" fill="url(#folkCreamBg)"/>
+
+  <!-- Minimalist Folk Border with Kolam Corners -->
+  <rect x="24" y="24" width="552" height="432" fill="none" stroke="#4A5D4E" stroke-width="1.5"/>
+  <rect x="32" y="32" width="536" height="416" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Corner Kolam accents -->
+  <g stroke="#C5A059" stroke-width="1.2" fill="none">
+    <path d="M42 42 L56 42 M42 42 L42 56"/>
+    <circle cx="46" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M558 42 L544 42 M558 42 L558 56"/>
+    <circle cx="554" cy="46" r="2.5" fill="#C5A059"/>
+    <path d="M42 438 L56 438 M42 438 L42 424"/>
+    <circle cx="46" cy="434" r="2.5" fill="#C5A059"/>
+    <path d="M558 438 L544 438 M558 438 L558 424"/>
+    <circle cx="554" cy="434" r="2.5" fill="#C5A059"/>
+  </g>
+
+  <!-- Central Folk Motif: Sacred Kalasam &amp; Manjal (Turmeric) Pot -->
+  <!-- Radiating Mandala Halo -->
+  <circle cx="300" cy="205" r="125" fill="#EEF4EC" stroke="#C5A059" stroke-width="0.8" stroke-dasharray="3 3"/>
+  <circle cx="300" cy="205" r="105" fill="#FAF6EE" stroke="#7A8F78" stroke-width="0.8"/>
+
+  <!-- Kalamkari Style Sacred Kalasam Pot -->
+  <g transform="translate(300, 215)">
+    <!-- Kalasam base stand -->
+    <path d="M-40 55 C-40 65, 40 65, 40 55 Z" fill="#C5A059" stroke="#8A6A2C" stroke-width="1.5"/>
+    <line x1="-30" y1="65" x2="30" y2="65" stroke="#4A5D4E" stroke-width="2"/>
+
+    <!-- Brass pot body -->
+    <path d="M-52 10 C-65 35, -45 55, 0 55 C45 55, 65 35, 52 10 C45 -5, -45 -5, -52 10 Z" fill="#E8B84B" stroke="#9E7828" stroke-width="2"/>
+    <!-- Pot ornamentation: Folk fish / lotus patterns -->
+    <path d="M-40 25 Q0 38 40 25" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <circle cx="0" cy="30" r="5" fill="#8B263E"/>
+    <circle cx="-20" cy="28" r="3.5" fill="#4A5D4E"/>
+    <circle cx="20" cy="28" r="3.5" fill="#4A5D4E"/>
+
+    <!-- Pot neck &amp; rim with sacred thread (Kankanam) -->
+    <rect x="-35" y="-12" width="70" height="14" rx="3" fill="#D4AF37" stroke="#8A6A2C" stroke-width="1.5"/>
+    <line x1="-35" y1="-5" x2="35" y2="-5" stroke="#8B263E" stroke-width="2"/> <!-- Sacred yellow-red thread -->
+
+    <!-- Auspicious Mango Leaves (Maavilai) -->
+    <path d="M-30 -10 C-60 -50, -45 -75, -20 -60 C-15 -35, -15 -10, -30 -10 Z" fill="#4A5D4E" stroke="#2D3A2F" stroke-width="1.5"/>
+    <path d="M30 -10 C60 -50, 45 -75, 20 -60 C15 -35, 15 -10, 30 -10 Z" fill="#4A5D4E" stroke="#2D3A2F" stroke-width="1.5"/>
+    <path d="M-15 -10 C-30 -65, -10 -90, 0 -75 C5 -40, 0 -10, -15 -10 Z" fill="#627A67" stroke="#2D3A2F" stroke-width="1.5"/>
+    <path d="M15 -10 C30 -65, 10 -90, 0 -75 C-5 -40, 0 -10, 15 -10 Z" fill="#627A67" stroke="#2D3A2F" stroke-width="1.5"/>
+    <path d="M0 -12 C0 -85, 0 -85, 0 -75" stroke="#8BC34A" stroke-width="1.5"/>
+
+    <!-- Sacred Coconut (Thengai) with Chandanam &amp; Kumkum -->
+    <circle cx="0" cy="-35" r="26" fill="#8D5543" stroke="#5E3529" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-35" rx="8" ry="12" fill="#E8B84B"/> <!-- Turmeric paste -->
+    <circle cx="0" cy="-35" r="5" fill="#B91C1C"/> <!-- Red Kumkum tilak -->
+
+    <!-- Floating Turmeric Root &amp; Lotus Buds beside Kalasam -->
+    <path d="M-90 40 C-105 30, -115 45, -95 55 C-85 50, -85 45, -90 40 Z" fill="#F1A80A" stroke="#B45309" stroke-width="1.2"/>
+    <circle cx="-105" cy="45" r="2.5" fill="#B91C1C"/>
+    
+    <path d="M90 40 C105 30, 115 45, 95 55 C85 50, 85 45, 90 40 Z" fill="#F1A80A" stroke="#B45309" stroke-width="1.2"/>
+    <circle cx="105" cy="45" r="2.5" fill="#B91C1C"/>
+  </g>
+
+  <!-- Symmetrical Folk Jasmine Sprigs at top -->
+  <g stroke="#C5A059" stroke-width="1" fill="#FFFFFF">
+    <circle cx="270" cy="72" r="5"/><circle cx="285" cy="65" r="5"/>
+    <circle cx="300" cy="62" r="6"/><circle cx="315" cy="65" r="5"/><circle cx="330" cy="72" r="5"/>
+  </g>
+
+  <!-- Editorial Folk Label Block -->
+  <g transform="translate(300, 395)">
+    <rect x="-190" y="-20" width="380" height="40" rx="20" fill="#FFFFFF" stroke="#4A5D4E" stroke-width="1"/>
+    <text x="0" y="-3" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="12" fill="#4A5D4E" font-weight="700" letter-spacing="2">மஞ்சள் நீராட்டு • MANJAL NEERATTU</text>
+    <text x="0" y="13" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#8A6A2C" letter-spacing="1.2">Sacred Turmeric Abhishekam &amp; Auspicious Kalasam</text>
+  </g>
+</svg>

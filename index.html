@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Manjal Neerattu Vizha | D. K. Monisha — Traditional Ceremony Invitation</title>
+  <meta name="description" content="Join us in celebrating the auspicious Manjal Neerattu Vizha (Half Saree Ceremony) of our beloved daughter & sister D. K. Monisha on Sunday, 25th October 2026 at Sri Bannari Amman Mahal AC, Dharmapuri.">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="D. K. Monisha — Manjal Neerattu Vizha Invitation">
+  <meta property="og:description" content="A Beautiful New Beginning — Join our family in blessing our beloved daughter D. K. Monisha on her auspicious day.">
+  <meta property="og:image" content="assets/images/sister-portrait-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/mandala-crest.svg">
+
+  <!-- Google Fonts: Cormorant Garamond (Serif), Cinzel (Display), Alex Brush (Script), Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Falling Petals Canvas -->
+  <canvas id="petalsCanvas" aria-hidden="true"></canvas>
+
+  <!-- Audio Player (Synthesized Carnatic Ambient Flute & Tanpura or MP3) -->
+  <audio id="bgAudio" preload="auto" loop></audio>
+
+  <!-- Floating Interactive Controls (Music & Petals Toggle) -->
+  <aside class="floating-controls" aria-label="Interactive website controls">
+    <button id="musicToggleBtn" class="control-btn music-btn" aria-label="Toggle background instrumental music" title="Play soothing traditional ambient flute music">
+      <span class="disc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="icon-music">
+          <path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="6" cy="18" r="3" fill="currentColor"/>
+          <circle cx="18" cy="16" r="3" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="equalizer-bars" aria-hidden="true">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </span>
+      <span class="btn-text">Music: <strong class="music-status">OFF</strong></span>
+    </button>
+
+    <button id="petalsToggleBtn" class="control-btn petals-btn" aria-label="Toggle falling jasmine flower petals" title="Toggle falling flower petals">
+      <img src="assets/images/jasmine-flower.svg" alt="" class="btn-jasmine-icon" aria-hidden="true">
+      <span class="btn-text">Petals: <strong class="petals-status">ON</strong></span>
+    </button>
+  </aside>
+
+  <!-- Floating Back To Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ========================================================
+       TOP NAVIGATION BAR (RSVP removed as requested)
+       ======================================================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-crest" aria-label="Go to invitation home">
+        <img src="assets/images/mandala-crest.svg" alt="Auspicious Crest" class="crest-img">
+        <div class="brand-text">
+          <span class="brand-title cfg-sister-short">D. K. Monisha</span>
+          <span class="brand-sub">Manjal Neerattu Vizha</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#invitation" class="nav-link">Invitation</a></li>
+          <li><a href="#about" class="nav-link">Her Story</a></li>
+          <li><a href="#events" class="nav-link">Ceremony</a></li>
+          <li><a href="#countdown" class="nav-link">Countdown</a></li>
+          <li><a href="#schedule" class="nav-link">Schedule</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#venue" class="nav-link nav-btn-venue">Venue &amp; Map</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Hamburger Button -->
+      <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <img src="assets/images/mandala-crest.svg" alt="" class="drawer-crest">
+        <p class="drawer-name cfg-sister-name">D. K. Monisha</p>
+        <span class="drawer-event">Manjal Neerattu Vizha</span>
+        <button id="closeDrawerBtn" class="drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#hero" class="drawer-link">Home</a></li>
+        <li><a href="#invitation" class="drawer-link">Invitation Letter</a></li>
+        <li><a href="#about" class="drawer-link">Our Little Girl</a></li>
+        <li><a href="#events" class="drawer-link">Ceremony Details</a></li>
+        <li><a href="#countdown" class="drawer-link">Countdown</a></li>
+        <li><a href="#schedule" class="drawer-link">Event Schedule</a></li>
+        <li><a href="#gallery" class="drawer-link">Photo Gallery</a></li>
+        <li><a href="#venue" class="drawer-link venue-highlight">Venue &amp; Directions</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-blessing">With the Blessings of Our Family</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         SECTION 1: HERO SECTION — FIRST IMPRESSION
+         ======================================================== -->
+    <section id="hero" class="hero-section">
+      <!-- Decorative Botanical Corners -->
+      <img src="assets/images/botanical-corner.svg" alt="" class="corner-flourish corner-top-left" aria-hidden="true">
+      <img src="assets/images/botanical-corner.svg" alt="" class="corner-flourish corner-top-right" aria-hidden="true">
+      <img src="assets/images/botanical-corner.svg" alt="" class="corner-flourish corner-bottom-left" aria-hidden="true">
+      <img src="assets/images/botanical-corner.svg" alt="" class="corner-flourish corner-bottom-right" aria-hidden="true">
+
+      <div class="hero-content">
+        <!-- Auspicious Family Blessing Eyebrow -->
+        <div class="hero-eyebrow fade-in-el">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">WITH THE BLESSINGS OF OUR FAMILY</span>
+          <span class="eyebrow-line"></span>
+        </div>
+
+        <!-- Auspicious Central Mandala Crest -->
+        <div class="hero-crest-wrap fade-in-el">
+          <img src="assets/images/mandala-crest.svg" alt="Auspicious Crest" class="hero-mandala">
+        </div>
+
+        <!-- Sister's Name Title -->
+        <h1 class="hero-sister-name fade-in-el cfg-sister-name">D. K. Monisha</h1>
+
+        <!-- Script Subtitle / Ceremonial Title -->
+        <div class="ceremony-badge-wrap fade-in-el">
+          <p class="ceremony-tagline">A Beautiful New Beginning</p>
+          <div class="ceremony-tamil-title">
+            <span class="ceremony-english cfg-ceremony-name">Manjal Neerattu Vizha</span>
+            <span class="tamil-separator">•</span>
+            <span class="ceremony-tamil">பூப்புனித நீராட்டு விழா</span>
+          </div>
+        </div>
+
+        <!-- Warm Subtitle -->
+        <p class="hero-subtitle fade-in-el">
+          Join us as we celebrate a cherished milestone in her life.
+        </p>
+
+        <!-- Floral Divider Ornament -->
+        <div class="hero-divider-wrap fade-in-el">
+          <img src="assets/images/floral-divider.svg" alt="" class="ornamental-divider" aria-hidden="true">
+        </div>
+
+        <!-- Key Ceremony Meta Pills (Date & Venue) -->
+        <div class="hero-meta-pill fade-in-el">
+          <div class="meta-item">
+            <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span class="meta-val cfg-event-date">Sunday, 25th October 2026</span>
+          </div>
+          <span class="pill-dot" aria-hidden="true">•</span>
+          <div class="meta-item">
+            <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span class="meta-val cfg-muhurtham-time">Function Timing: 10:00 AM</span>
+          </div>
+          <span class="pill-dot" aria-hidden="true">•</span>
+          <div class="meta-item">
+            <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span class="meta-val cfg-venue-short">Sri Bannari Amman Mahal AC, Dharmapuri</span>
+          </div>
+        </div>
+
+        <!-- Hero Action Buttons -->
+        <div class="hero-actions fade-in-el">
+          <a href="#invitation" class="btn btn-primary ornamental-btn">
+            <span class="btn-inner">
+              <span class="btn-shine"></span>
+              EXPLORE THE INVITATION
+            </span>
+          </a>
+          <button id="heroCalendarBtn" class="btn btn-secondary calendar-quick-btn" title="Add to Google Calendar or Apple iCal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="btn-icon">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>Add to Calendar</span>
+          </button>
+        </div>
+
+        <!-- Subtle Animated Scroll Indicator -->
+        <a href="#invitation" class="scroll-indicator" aria-label="Scroll down to invitation">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-label">Scroll to enter</span>
+          <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 2: WELCOME / INVITATION SECTION (VERBATIM TEXT)
+         ======================================================== -->
+    <section id="invitation" class="invitation-section section-padding">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-heading text-center">
+          <span class="sub-label">TRADITIONAL INVITATION</span>
+          <h2 class="section-title">With Warmest Greetings</h2>
+          <img src="assets/images/leaf-sprig.svg" alt="" class="heading-leaf-sprig" aria-hidden="true">
+        </div>
+
+        <!-- Luxury Editorial Invitation Card -->
+        <div class="invitation-card">
+          <div class="card-border-gold"></div>
+          <div class="card-inner-pattern">
+            <!-- Auspicious Diya / Kalasam Icon -->
+            <div class="traditional-icon-wrap">
+              <img src="assets/images/traditional-lamp.svg" alt="Auspicious Lamp" class="traditional-lamp-img">
+            </div>
+
+            <!-- Tamil Sacred Verse (Requested exact text) -->
+            <p class="tamil-blessing-verse">
+              "அன்பும் அறமும் நிறைந்த சுபமுகூர்த்த நன்னாளில்,<br>
+              எங்கள் அன்புச் செல்வத்தின் பூப்புனித நீராட்டு விழாவிற்கு,<br>
+              தங்களை குடும்ப சமேதராக அன்போடு அழைக்கின்றோம்."
+            </p>
+
+            <img src="assets/images/floral-divider.svg" alt="" class="card-divider" aria-hidden="true">
+
+            <!-- Heartfelt English Invitation Message (Requested exact text) -->
+            <div class="letter-body">
+              <p class="lead-paragraph">
+                With hearts filled with happiness and gratitude, we invite you to join us in celebrating a beautiful milestone in our daughter’s life.
+              </p>
+              <p class="body-paragraph">
+                As she steps into a new chapter filled with dreams, blessings, and endless possibilities, your presence will make this special day even more memorable.
+              </p>
+              <p class="body-paragraph">
+                We look forward to celebrating this precious occasion with our beloved family and friends.
+              </p>
+            </div>
+
+            <!-- Signature & Family Name (Requested exact parents & elders) -->
+            <div class="invitation-signature">
+              <span class="sig-prefix">With love &amp; warm regards,</span>
+              <h3 class="family-name cfg-family-name">Kathiravan. D &amp; Bharathi. M</h3>
+              <p class="family-role">Parents of our beloved daughter</p>
+              
+              <!-- Beloved Elders & Family Section (Requested complete family list) -->
+              <div class="beloved-family-section">
+                <div class="family-section-divider">
+                  <span class="divider-line"></span>
+                  <h4 class="beloved-family-heading">BELOVED ELDERS &amp; FAMILY &bull; அன்புடன் அழைக்கும் குடும்பத்தினர்</h4>
+                  <span class="divider-line"></span>
+                </div>
+
+                <div class="elders-family-grid">
+                  
+                  <!-- Grandparents -->
+                  <div class="elder-group-card">
+                    <span class="elder-relation-badge">GRANDPARENTS &bull; தாத்தா - பாட்டி</span>
+                    <ul class="elder-names-list">
+                      <li><strong>Thatha:</strong> DuraiSamy &nbsp;&bull;&nbsp; <strong>Paati:</strong> Jayamal</li>
+                      <li><strong>Thatha:</strong> Muthusamy &nbsp;&bull;&nbsp; <strong>Paati:</strong> Kasthuri</li>
+                    </ul>
+                  </div>
+
+                  <!-- Periyappa & Amma -->
+                  <div class="elder-group-card">
+                    <span class="elder-relation-badge">PERIYAPPA &amp; AMMA &bull; பெரியப்பா - அம்மா</span>
+                    <ul class="elder-names-list">
+                      <li><strong>Periyappa:</strong> Selvakumar &nbsp;&bull;&nbsp; <strong>Amma:</strong> Kalaiselvi</li>
+                    </ul>
+                  </div>
+
+                  <!-- Chithappa & Chithi -->
+                  <div class="elder-group-card">
+                    <span class="elder-relation-badge">CHITHAPPA &amp; CHITHI &bull; சித்தப்பா - சித்தி</span>
+                    <ul class="elder-names-list">
+                      <li><strong>Chithappa:</strong> Anbalagan &nbsp;&bull;&nbsp; <strong>Chithi:</strong> SasiKala</li>
+                    </ul>
+                  </div>
+
+                  <!-- Maternal Uncles & Aunts (Thaimama & Mama - Athai) -->
+                  <div class="elder-group-card">
+                    <span class="elder-relation-badge">MATERNAL UNCLES &amp; AUNTS &bull; தாய்மாமன் &amp; மாமா - அத்தை</span>
+                    <ul class="elder-names-list">
+                      <li><strong>Thaimama:</strong> Asaithambi &nbsp;&bull;&nbsp; <strong>Athai:</strong> Ranjitham</li>
+                      <li><strong>Mama:</strong> Nallathambi &nbsp;&bull;&nbsp; <strong>Athai:</strong> Tamilarasi</li>
+                    </ul>
+                  </div>
+                   <!-- Big Brothers -->
+<div class="elder-group-card brothers-card">
+  <span class="elder-relation-badge">
+    BIG BROTHERS &bull; அண்ணன்கள் 
+  </span>
+
+  <ul class="elder-names-list brothers-list">
+    <li>
+      <strong>S. Abishek</strong>
+      <span class="degree-tag">B.Tech (IT).,MBA (AIDS)</span>
+
+    </li>
+
+    <li>
+      <strong>Dir. S. K. Durgesh</strong>
+      <span class="degree-tag">B.E. (CSB)</span>
+    </li>
+  </ul>
+</div>
+                  <!-- Sister -->
+                  <div class="elder-group-card brothers-card">
+                    <span class="elder-relation-badge">LOVING SISTER &bull; அன்பு சகோதரி</span>
+                    <ul class="elder-names-list brothers-list">
+                      <li>
+                        <strong>A. Kovarthini</strong> <span class="degree-tag role-tag">Sister &bull; சகோதரி</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Loving Cousins -->
+                  <div class="elder-group-card cousins-card">
+                    <span class="elder-relation-badge">LOVING COUSINS &bull; அன்பு உடன்பிறப்புகள் (COUSINS)</span>
+                    <ul class="elder-names-list cousins-list">
+                      <li>
+                        <strong>A. Praveen</strong> <span class="degree-tag">B.E(ECE)</span>
+                      </li>
+                      <li>
+                        <strong>A. GaneshKumar</strong> <span class="degree-tag">Diploma(Textile)</span>
+                      </li>
+                      </li>
+                      <li>
+                        <strong>M. A. Megha</strong>
+                      </li>
+                      <li>
+                        <strong>A. Nishanth</strong>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <!-- Concluding Family Line -->
+                <p class="family-concluding-line">
+                  &amp; Relatives, Grandparents, Brothers, Sisters, Cousins, Friends and Well-Wishers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 3: SISTER'S PHOTO SECTION
+         ======================================================== -->
+    <section id="about" class="sister-story-section section-padding">
+      <div class="container">
+        <div class="sister-story-grid">
+          
+          <!-- Left / Featured Arched Portrait -->
+          <div class="portrait-column">
+            <div class="arched-portrait-frame">
+              <!-- Outer decorative gold line -->
+              <div class="frame-gold-accent"></div>
+              
+              <!-- Featured Portrait Image -->
+              <div class="portrait-img-box">
+                <img id="mainSisterPhoto" src="assets/images/sister-portrait-placeholder.svg" alt="D. K. Monisha Portrait" class="sister-portrait-img">
+                
+                <!-- Floating Jasmine Accent Badge -->
+                <div class="portrait-corner-badge">
+                  <img src="assets/images/jasmine-flower.svg" alt="" class="badge-jasmine" aria-hidden="true">
+                  <span>D. K. Monisha &bull; Traditional Half Saree</span>
+                </div>
+              </div>
+
+              <!-- Delicate Leaf Accents on Frame -->
+              <img src="assets/images/botanical-corner.svg" alt="" class="frame-botanical-corner bottom-right" aria-hidden="true">
+            </div>
+          </div>
+
+          <!-- Right / Editorial Narrative -->
+          <div class="story-content-column">
+            <div class="story-badge">
+              <span>OUR CELEBRATION OF GRACE</span>
+            </div>
+            
+            <h2 class="story-headline">
+              Our Little Girl, Growing Into a Beautiful New Chapter.
+            </h2>
+            
+            <p class="story-tamil-quote">
+              "மங்கல நங்கை என மலர்ந்து நிற்கும் எங்கள் குடும்பத்து நிலவு — டி. கே. மோனிஷா"
+            </p>
+
+            <p class="story-text">
+              From taking her very first steps and filling our home with pure, contagious laughter, to blossoming into a graceful, intelligent, and warm-hearted young woman — every chapter of D. K. Monisha’s journey has been an eternal blessing to our family.
+            </p>
+
+            <p class="story-text">
+              The <em>Manjal Neerattu Vizha</em> (பூப்புனித நீராட்டு விழா) is an ancient, cherished Tamil tradition where elders shower sacred turmeric water, love, and divine blessings, presenting her with her traditional silk half saree (Pavadai Dhavani) as she steps into womanhood.
+            </p>
+
+            <!-- Milestones Cards -->
+            <div class="milestones-row">
+              <div class="milestone-card">
+                <span class="milestone-num">01</span>
+                <h4 class="milestone-title">Tradition &amp; Grace</h4>
+                <p class="milestone-desc">Adorned in pure silk, fragrant jasmine, and blessed with sacred mantras.</p>
+              </div>
+              <div class="milestone-card">
+                <span class="milestone-num">02</span>
+                <h4 class="milestone-title">Elders' Blessings</h4>
+                <p class="milestone-desc">Showered with boundless affection from parents, Periyappa, Periyamma, and relatives.</p>
+              </div>
+              <div class="milestone-card">
+                <span class="milestone-num">03</span>
+                <h4 class="milestone-title">Joyous Celebration</h4>
+                <p class="milestone-desc">Sacred rituals followed by live DJ celebration and traditional Virundhu.</p>
+              </div>
+            </div>
+
+            <div class="story-cta-wrap">
+              <a href="#events" class="btn btn-primary">VIEW CEREMONY DETAILS</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 4: EVENT DETAILS SECTION
+         ======================================================== -->
+    <section id="events" class="events-section section-padding">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-heading text-center">
+          <span class="sub-label">A SACRED OCCASION</span>
+          <h2 class="section-title">Ceremony &amp; Celebration</h2>
+          <p class="section-intro">
+            We cordially invite you and your family to grace this auspicious day with your presence and blessings.
+          </p>
+          <img src="assets/images/leaf-sprig.svg" alt="" class="heading-leaf-sprig" aria-hidden="true">
+        </div>
+
+        <!-- 3 Luxury Event Cards -->
+        <div class="event-cards-grid">
+          
+          <!-- Card 1: Traditional Ceremony (Function Timing: 10:00 AM) -->
+          <div class="event-card">
+            <div class="card-top-accent">
+              <span class="accent-number">RITUAL</span>
+            </div>
+            <div class="card-icon-circle">
+              <img src="assets/images/traditional-lamp.svg" alt="Ceremony Icon" class="card-icon-img">
+            </div>
+            <h3 class="event-card-title">Manjal Neerattu Vizha</h3>
+            <p class="event-card-tamil">பூப்புனித நீராட்டு விழா முகூர்த்தம்</p>
+
+            <ul class="event-info-list">
+              <li>
+                <span class="info-label">Date:</span>
+                <span class="info-value cfg-event-date">Sunday, 25th October 2026</span>
+              </li>
+              <li>
+                <span class="info-label">Function Timing:</span>
+                <span class="info-value highlight cfg-muhurtham-time">10:00 AM onwards</span>
+              </li>
+              <li>
+                <span class="info-label">Celebration:</span>
+                <span class="info-value">Sacred Turmeric Ritual, Half Saree Presentation &amp; Aarti</span>
+              </li>
+              <li>
+                <span class="info-label">Entertainment:</span>
+                <span class="info-value highlight">Live DJ &amp; Celebration starting at 11:00 AM</span>
+              </li>
+            </ul>
+            <div class="card-bottom-tag">
+              <span>Traditional South Indian Attire</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Virundhu / Lunch (Lunch Timing: 12:30 PM) -->
+          <div class="event-card featured-card">
+            <div class="card-top-accent">
+              <span class="accent-number">FEAST</span>
+            </div>
+            <div class="card-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="card-icon-svg">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                <line x1="6" y1="1" x2="6" y2="4"/>
+                <line x1="10" y1="1" x2="10" y2="4"/>
+                <line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <h3 class="event-card-title">Virundhu </h3>
+            <p class="event-card-tamil">பாரம்பரிய தலைவாழை இலை விருந்து</p>
+
+            <ul class="event-info-list">
+              <li>
+                <span class="info-label">Date:</span>
+                <span class="info-value cfg-event-date">Sunday, 25th October 2026</span>
+              </li>
+              <li>
+                <span class="info-label">Virundhu / Lunch Timing:</span>
+                <span class="info-value highlight cfg-lunch-time">12:30 PM onwards</span>
+              </li>
+              <li>
+                <span class="info-label">Cuisine:</span>
+                <span class="info-value">Traditional South Indian Banana Leaf Feast (தலைவாழை விருந்து)</span>
+              </li>
+              <li>
+                <span class="info-label">Family Gathering:</span>
+                <span class="info-value">Photography, Family Get-Together &amp; Sweet Distribution</span>
+              </li>
+            </ul>
+            <div class="card-bottom-tag">
+              <span>Grand Vegetarian Delicacies &amp; Payasam</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Venue & Directions -->
+          <div class="event-card">
+            <div class="card-top-accent">
+              <span class="accent-number">LOCATION</span>
+            </div>
+            <div class="card-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="card-icon-svg">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="event-card-title cfg-venue-name">Sri Bannari Amman Mahal AC</h3>
+            <p class="event-card-tamil">ஸ்ரீ பண்ணாரி அம்மன் மஹால் ஏ/சி</p>
+
+            <ul class="event-info-list">
+              <li>
+                <span class="info-label">Address:</span>
+                <span class="info-value cfg-venue-address">Periyampatti, Krishnagiri Main Road, Dharmapuri – 635205</span>
+              </li>
+              <li>
+                <span class="info-label">Prominent Landmark:</span>
+                <span class="info-value cfg-venue-landmark">Krishnagiri Main Road, Periyampatti</span>
+              </li>
+              <li>
+                <span class="info-label">Facility:</span>
+                <span class="info-value">Air Conditioned Hall with Spacious Parking</span>
+              </li>
+            </ul>
+
+            <div class="card-btn-wrap">
+              <a id="getDirectionsBtn" href="https://www.google.com/maps/search/?api=1&query=Sri+Bannari+Amman+Mahal+AC+Periyampatti+Krishnagiri+Main+Road+Dharmapuri" target="_blank" rel="noopener noreferrer" class="btn btn-outline card-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="btn-icon">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                </svg>
+                <span>GET DIRECTIONS</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 5: COUNTDOWN TIMER
+         ======================================================== -->
+    <section id="countdown" class="countdown-section section-padding">
+      <div class="container">
+        <div class="countdown-card">
+          <!-- Background decorative leaf wreaths -->
+          <img src="assets/images/botanical-corner.svg" alt="" class="countdown-corner top-left" aria-hidden="true">
+          <img src="assets/images/botanical-corner.svg" alt="" class="countdown-corner bottom-right" aria-hidden="true">
+
+          <div class="countdown-header text-center">
+            <span class="countdown-eyebrow">COUNTING DOWN THE MOMENTS</span>
+            <h2 class="countdown-title">Until We Celebrate Her Day</h2>
+            <p class="countdown-subtitle cfg-event-date-long">
+              October 25, 2026 • Function begins at 10:00 AM IST
+            </p>
+          </div>
+
+          <!-- Active Countdown Numbers Container -->
+          <div id="countdownTimer" class="countdown-grid" aria-live="polite">
+            <!-- Days -->
+            <div class="timer-box">
+              <div class="timer-digit-wrap">
+                <span id="daysVal" class="timer-number">00</span>
+              </div>
+              <span class="timer-label">DAYS</span>
+            </div>
+
+            <div class="timer-separator">:</div>
+
+            <!-- Hours -->
+            <div class="timer-box">
+              <div class="timer-digit-wrap">
+                <span id="hoursVal" class="timer-number">00</span>
+              </div>
+              <span class="timer-label">HOURS</span>
+            </div>
+
+            <div class="timer-separator">:</div>
+
+            <!-- Minutes -->
+            <div class="timer-box">
+              <div class="timer-digit-wrap">
+                <span id="minutesVal" class="timer-number">00</span>
+              </div>
+              <span class="timer-label">MINUTES</span>
+            </div>
+
+            <div class="timer-separator">:</div>
+
+            <!-- Seconds -->
+            <div class="timer-box">
+              <div class="timer-digit-wrap">
+                <span id="secondsVal" class="timer-number">00</span>
+              </div>
+              <span class="timer-label">SECONDS</span>
+            </div>
+          </div>
+
+          <!-- Celebration Arrived Notification -->
+          <div id="celebrationNotice" class="celebration-arrived-box" style="display: none;">
+            <div class="celebration-badge">
+              <img src="assets/images/jasmine-flower.svg" alt="" class="celebration-flower">
+              <h3>Today is the day we celebrate!</h3>
+              <p>Welcome to our family celebration for D. K. Monisha. May your blessings shower upon our beloved sister today!</p>
+            </div>
+          </div>
+
+          <!-- Add to Calendar Action -->
+          <div class="countdown-actions text-center">
+            <button id="addToCalBtn" class="btn btn-secondary cal-modal-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="btn-icon">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <span>Save Ceremony Date to Calendar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 6: CEREMONY SCHEDULE / TIMELINE (9 AM start, 11 AM DJ)
+         ======================================================== -->
+    <section id="schedule" class="schedule-section section-padding">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-heading text-center">
+          <span class="sub-label">CEREMONIAL TIMELINE</span>
+          <h2 class="section-title">Schedule of the Day</h2>
+          <p class="section-intro">
+            A step-by-step journey of traditional South Indian rituals, live DJ celebration, and grand feast.
+          </p>
+          <img src="assets/images/leaf-sprig.svg" alt="" class="heading-leaf-sprig" aria-hidden="true">
+        </div>
+
+        <!-- Refined Editorial Timeline -->
+        <div class="timeline-container">
+          <div class="timeline-vertical-line"></div>
+
+          <!-- Timeline Item 1: 9:00 AM -->
+          <div class="timeline-item left-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-time">09:00 AM</span>
+              <h3 class="timeline-title">Mangala Isai &amp; Welcome</h3>
+              <p class="timeline-tamil">மங்கல இசை மற்றும் வரவேற்பு</p>
+              <p class="timeline-desc">
+                Welcoming our cherished family and guests with traditional Nadaswaram, Thavil, fresh rosewater, and Chandanam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: 10:00 AM -->
+          <div class="timeline-item right-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-time">10:00 AM</span>
+              <h3 class="timeline-title">Traditional Manjal Neerattu Vizha</h3>
+              <p class="timeline-tamil">மஞ்சள் நீராட்டு மங்கல சடங்கு &amp; முகூர்த்தம்</p>
+              <p class="timeline-desc">
+                Sacred turmeric water ritual performed by maternal uncles (Thaai Maaman), aunts, Periyappa, Periyamma, and elders with Vedic chants and blessings, followed by Pavadai Dhavani (Half Saree) presentation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 11:00 AM (Requested DJ) -->
+          <div class="timeline-item left-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-time">11:00 AM</span>
+              <h3 class="timeline-title">Live DJ &amp; Celebration</h3>
+              <p class="timeline-tamil">டிஜே இசை &amp; உற்சாக கொண்டாட்டம்</p>
+              <p class="timeline-desc">
+                Celebration with lively DJ music, joyful dancing, youth celebrations, and capturing memorable moments with cousins and friends!
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: 11:45 AM -->
+          <div class="timeline-item right-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-time">11:45 AM</span>
+              <h3 class="timeline-title">Family Blessings &amp; Aarti</h3>
+              <p class="timeline-tamil">ஆரத்தி &amp; பெரியோர்கள் ஆசிர்வாதம்</p>
+              <p class="timeline-desc">
+                Auspicious Aarti by Sumangalis, blessing Monisha for a prosperous, blissful future, followed by family stage photo sessions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5: 12:30 PM (Virundhu) -->
+          <div class="timeline-item left-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-time">12:30 PM</span>
+              <h3 class="timeline-title">Traditional Virundhu Feast</h3>
+              <p class="timeline-tamil">தலைவாழை இலை மங்கல விருந்து</p>
+              <p class="timeline-desc">
+                Grand traditional South Indian vegetarian feast served on fresh banana leaves with authentic delicacies, sweets, and payasam.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 7: OUR FAMILY'S LOVE (HEARTFELT TRIBUTE)
+         ======================================================== -->
+    <section class="family-love-section section-padding">
+      <div class="container">
+        <div class="love-quote-card">
+          <div class="quote-decor-top">
+            <span class="quote-mark">“</span>
+          </div>
+
+          <p class="quote-text">
+            Every little moment has brought us here — from childhood laughter to the beautiful young woman she is becoming. Today, we celebrate not just a milestone, but all the love, hopes, and blessings surrounding her journey.
+          </p>
+
+          <img src="assets/images/floral-divider.svg" alt="" class="quote-divider" aria-hidden="true">
+
+          <div class="quote-author">
+            <span class="author-prefix">Forever Blessed &amp; Cherished by</span>
+            <h4 class="author-title">Kathiravan. D &amp; Bharathi. M</h4>
+            <p class="family-sub-elders">Grandparents, Periyappa, Amma, Chithappa, Chithi, Thaimama, Athai, Sister A. Kovarthini, Brothers S.Abishek,  &amp; S.K.Durgesh and Loving Cousins A. Praveen, A. GaneshKumar, M. A. Megha &amp; A. Nishanth</p>
+            <span class="author-tamil">அன்புடன் எங்கள் குடும்பத்தார்</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 8: PHOTO GALLERY (INTERACTIVE LIGHTBOX)
+         ======================================================== -->
+    <section id="gallery" class="gallery-section section-padding">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-heading text-center">
+          <span class="sub-label">CHERISHED GLIMPSES</span>
+          <h2 class="section-title">Moments &amp; Memories</h2>
+          <p class="section-intro">
+            A collection of treasured memories, traditional moments, and joyous preparations. Click any photo to view in full resolution!
+          </p>
+          <img src="assets/images/leaf-sprig.svg" alt="" class="heading-leaf-sprig" aria-hidden="true">
+        </div>
+
+        <!-- Gallery Grid with Minimalist Indian Folk Illustrations -->
+        <div id="galleryGrid" class="gallery-grid">
+          
+          <!-- Folk Illustration 1: Manjal Neerattu -->
+          <div class="gallery-item folk-art-item" data-index="0" tabindex="0" role="button" aria-label="View Manjal Neerattu folk illustration">
+            <div class="img-wrapper">
+              <img 
+                src="assets/images/folk-manjal-neerattu.svg?v=2" 
+                alt="மஞ்சள் நீராட்டு • Manjal Neerattu" 
+                class="gallery-thumb" 
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">+</span>
+                <span class="overlay-caption">மஞ்சள் நீராட்டு</span>
+                <span class="overlay-sub">Manjal Neerattu</span>
+              </div>
+            </div>
+            <div class="gallery-folk-caption">
+              <span class="folk-badge">TRADITIONAL RITUAL</span>
+              <h4 class="folk-title-tamil">மஞ்சள் நீராட்டு</h4>
+              <p class="folk-title-english">Manjal Neerattu</p>
+            </div>
+          </div>
+
+          <!-- Folk Illustration 2: Thavani Alankaram -->
+          <div class="gallery-item folk-art-item" data-index="1" tabindex="0" role="button" aria-label="View Thavani Alankaram folk illustration">
+            <div class="img-wrapper">
+              <img 
+                src="assets/images/folk-thavani-alankaram.svg?v=2" 
+                alt="தாவணி அலங்காரம் • Thavani Alankaram" 
+                class="gallery-thumb" 
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">+</span>
+                <span class="overlay-caption">தாவணி அலங்காரம்</span>
+                <span class="overlay-sub">Thavani Alankaram</span>
+              </div>
+            </div>
+            <div class="gallery-folk-caption">
+              <span class="folk-badge">HALF SAREE &amp; JEWELS</span>
+              <h4 class="folk-title-tamil">தாவணி அலங்காரம்</h4>
+              <p class="folk-title-english">Thavani Alankaram</p>
+            </div>
+          </div>
+
+          <!-- Folk Illustration 3: Malligai Poo Maalai -->
+          <div class="gallery-item folk-art-item" data-index="2" tabindex="0" role="button" aria-label="View Malligai Poo Maalai folk illustration">
+            <div class="img-wrapper">
+              <img 
+                src="assets/images/folk-malligai-maalai.svg?v=2" 
+                alt="மல்லிகைப் பூ மாலை • Malligai Poo Maalai" 
+                class="gallery-thumb" 
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">+</span>
+                <span class="overlay-caption">மல்லிகைப் பூ மாலை</span>
+                <span class="overlay-sub">Malligai Poo Maalai</span>
+              </div>
+            </div>
+            <div class="gallery-folk-caption">
+              <span class="folk-badge">MADURAI JASMINE</span>
+              <h4 class="folk-title-tamil">மல்லிகைப் பூ மாலை</h4>
+              <p class="folk-title-english">Malligai Poo Maalai</p>
+            </div>
+          </div>
+
+          <!-- Folk Illustration 4: Mangala Aarathi -->
+          <div class="gallery-item folk-art-item" data-index="3" tabindex="0" role="button" aria-label="View Mangala Aarathi folk illustration">
+            <div class="img-wrapper">
+              <img 
+                src="assets/images/folk-mangala-aarathi.svg?v=2" 
+                alt="மங்கல ஆரத்தி • Mangala Aarathi" 
+                class="gallery-thumb" 
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">+</span>
+                <span class="overlay-caption">மங்கல ஆரத்தி</span>
+                <span class="overlay-sub">Mangala Aarathi</span>
+              </div>
+            </div>
+            <div class="gallery-folk-caption">
+              <span class="folk-badge">ELDERS' BLESSINGS</span>
+              <h4 class="folk-title-tamil">மங்கல ஆரத்தி</h4>
+              <p class="folk-title-english">Mangala Aarathi</p>
+            </div>
+          </div>
+
+          <!-- Folk Illustration 5: Vaalai Ilai Virundhu (Requested specific illustration) -->
+          <div class="gallery-item folk-art-item" data-index="4" tabindex="0" role="button" aria-label="View Vaalai Ilai Virundhu folk illustration">
+            <div class="img-wrapper">
+              <img 
+                src="assets/images/folk-vaalai-ilai-virundhu.svg?v=2" 
+                alt="வாழை இலை விருந்து • Vaalai Ilai Virundhu" 
+                class="gallery-thumb" 
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">+</span>
+                <span class="overlay-caption">வாழை இலை விருந்து</span>
+                <span class="overlay-sub">Vaalai Ilai Virundhu</span>
+              </div>
+            </div>
+            <div class="gallery-folk-caption">
+              <span class="folk-badge">TRADITIONAL FEAST</span>
+              <h4 class="folk-title-tamil">வாழை இலை விருந்து</h4>
+              <p class="folk-title-english">Vaalai Ilai Virundhu</p>
+            </div>
+          </div>
+
+          <!-- Folk Illustration 6: Mangala Isai & DJ Kondattam -->
+          <div class="gallery-item folk-art-item" data-index="5" tabindex="0" role="button" aria-label="View Mangala Isai and DJ Kondattam folk illustration">
+            <div class="img-wrapper">
+              <img 
+                src="assets/images/folk-isai-kondattam.svg?v=2" 
+                alt="மங்கல இசை &amp; கொண்டாட்டம் • Isai &amp; DJ Kondattam" 
+                class="gallery-thumb" 
+                loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">+</span>
+                <span class="overlay-caption">மங்கல இசை &amp; டிஜே</span>
+                <span class="overlay-sub">Isai &amp; DJ Kondattam</span>
+              </div>
+            </div>
+            <div class="gallery-folk-caption">
+              <span class="folk-badge">MUSIC &amp; CELEBRATION</span>
+              <h4 class="folk-title-tamil">மங்கல இசை &amp; கொண்டாட்டம்</h4>
+              <p class="folk-title-english">Isai &amp; DJ Kondattam</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="gallery-hint text-center">
+          <em>Tip: You can easily add Monisha’s personal photos anytime by replacing the image paths in <code>script.js</code>.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image Lightbox">
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-content-box">
+        <button id="lightboxCloseBtn" class="lightbox-btn lightbox-close" aria-label="Close image">&times;</button>
+        <button id="lightboxPrevBtn" class="lightbox-btn lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button id="lightboxNextBtn" class="lightbox-btn lightbox-next" aria-label="Next image">&#10095;</button>
+
+        <div class="lightbox-img-wrapper">
+          <img id="lightboxImg" src="" alt="Enlarged gallery view" class="lightbox-active-img">
+        </div>
+        <div class="lightbox-caption-bar">
+          <p id="lightboxCaption" class="lightbox-caption-text"></p>
+          <span id="lightboxCounter" class="lightbox-counter-text">1 / 6</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         SECTION 9: LOCATION & CONTACT (SRI BANNARI AMMAN MAHAL AC)
+         ======================================================== -->
+    <section id="venue" class="venue-section section-padding">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-heading text-center">
+          <span class="sub-label">GETTING THERE</span>
+          <h2 class="section-title">Venue &amp; Location</h2>
+          <p class="section-intro">
+            We eagerly look forward to welcoming you to grace Monisha’s special day!
+          </p>
+          <img src="assets/images/leaf-sprig.svg" alt="" class="heading-leaf-sprig" aria-hidden="true">
+        </div>
+
+        <div class="venue-grid">
+          <!-- Venue Details Card -->
+          <div class="venue-info-box">
+            <div class="venue-badge">AUSPICIOUS VENUE</div>
+            <h3 class="venue-name-title cfg-venue-name">Sri Bannari Amman Mahal AC</h3>
+            <p class="venue-tamil-name">ஸ்ரீ பண்ணாரி அம்மன் மஹால் ஏ/சி</p>
+
+            <div class="venue-detail-item">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <strong>Full Address:</strong>
+                <p class="cfg-venue-address">Periyampatti, Krishnagiri Main Road, Dharmapuri – 635205</p>
+              </div>
+            </div>
+
+            <div class="venue-detail-item">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+              <div>
+                <strong>Prominent Landmark:</strong>
+                <p class="cfg-venue-landmark">Krishnagiri Main Road, Periyampatti, Dharmapuri</p>
+              </div>
+            </div>
+
+            <!-- Contact Persons: Father & Periyappa -->
+            <div class="contact-card-sub">
+              <h4 class="contact-sub-heading">For Inquiries &amp; Assistance:</h4>
+              <p class="contact-person-name">
+                <strong class="cfg-contact-person">Kathiravan .D (Father)</strong> &nbsp;&bull;&nbsp; 
+                <span class="cfg-contact-periyappa">Selvakumar (Periyappa)</span>
+              </p>
+              <p class="contact-phone-number">
+                Phone: <a id="telLink" href="tel:+919876543210" class="tel-link cfg-contact-phone">+91 98765 43210</a>
+              </p>
+
+              <!-- Venue & Directions Actions (WhatsApp removed as requested) -->
+              <div class="venue-actions">
+                <a id="openMapsBtn" href="https://www.google.com/maps/search/?api=1&query=Sri+Bannari+Amman+Mahal+AC+Periyampatti+Krishnagiri+Main+Road+Dharmapuri" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="btn-icon">
+                    <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                  </svg>
+                  <span>Open in Google Maps</span>
+                </a>
+
+                <a href="tel:+919876543210" class="btn btn-secondary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="btn-icon">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call Family</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map Card / Styled Map Wrapper -->
+          <div class="venue-map-box">
+            <div class="map-inner-frame">
+              <iframe 
+                id="gmapIframe"
+                src="https://maps.google.com/maps?q=Sri+Bannari+Amman+Mahal+AC+Periyampatti+Krishnagiri+Main+Road+Dharmapuri+635205&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="420" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Sri Bannari Amman Mahal AC Location Map">
+              </iframe>
+              <div class="map-overlay-badge">
+                <span>Periyampatti, Dharmapuri</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+         SECTION 10: FOOTER SECTION
+         ======================================================== -->
+  <footer class="site-footer">
+    <!-- Top Antique Gold Divider -->
+    <div class="footer-divider-wrap">
+      <img src="assets/images/floral-divider.svg" alt="" class="footer-gold-divider" aria-hidden="true">
+    </div>
+
+    <div class="container text-center">
+      <!-- Mandala Crest -->
+      <div class="footer-crest-wrap">
+        <img src="assets/images/mandala-crest.svg" alt="Auspicious Crest" class="footer-mandala">
+      </div>
+
+      <!-- Main Blessings Heading -->
+      <p class="footer-eyebrow">WITH LOVE &amp; BLESSINGS</p>
+      <h3 class="footer-sister-title">
+        <span class="cfg-sister-name">D. K. Monisha</span> — <span class="cfg-ceremony-name">Manjal Neerattu Vizha</span>
+      </h3>
+      <p class="footer-event-date cfg-event-date">Sunday, 25th October 2026</p>
+
+      <!-- Traditional Tamil Ending Verse -->
+      <p class="footer-tamil-blessing">
+        "எல்லா நலமும் வளமும் பெற்று பல்லாண்டு வாழ மனதார வாழ்த்துகிறோம்"
+      </p>
+
+      <!-- Warm Closing Words -->
+      <p class="footer-closing-message">
+        "Your presence and blessings will make our celebration truly special."
+      </p>
+
+      <p class="footer-family-names">
+        Kathiravan. D &bull; Bharathi. M &bull; DuraiSamy &bull; Jayamal &bull; Muthusamy &bull; Kasthuri &bull; Selvakumar &bull; Kalaiselvi &bull; Anbalagan &bull; SasiKala &bull; Asaithambi &bull; Ranjitham &bull; Nallathambi &bull; Tamilarasi &bull; S. Abishek &bull; Durgesh. S. K &bull; &amp; Family
+      </p>
+
+      <!-- Gold Thin Divider -->
+      <div class="footer-thin-line"></div>
+
+      <!-- Copyright / Family Dedication -->
+      <p class="footer-credits">
+        Crafted with immense love for our beloved daughter &bull; Traditional South Indian Ceremony Invitation
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
